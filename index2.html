@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fylo Dark Theme</title>
+  <style>
+
+:root {
+  --blue-dark: hsl(217, 28%, 15%);
+  --blue-main: hsl(218, 28%, 13%);
+  --blue-card: hsl(219, 30%, 18%);
+  --blue-footer: hsl(216, 53%, 9%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --white: #fff;
+  --font: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--blue-main);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--cyan);
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero img {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  background: linear-gradient(90deg, var(--cyan), var(--blue));
+  color: var(--white);
+}
+
+.features {
+  margin: 4rem 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center;
+}
+
+.features img {
+  margin-bottom: 1rem;
+}
+
+.productive {
+  margin: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.productive a {
+  color: var(--cyan);
+  border-bottom: 1px solid var(--cyan);
+  text-decoration: none;
+}
+
+.testimonials {
+  margin: 4rem 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: var(--blue-card);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+footer {
+  background: var(--blue-footer);
+  padding: 3rem 0;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+</style>
+</head>
+<body>
+  <header class="header container">
+    <img src="images/logo.svg" alt="Fylo Logo" class="logo">
+    <nav>
+      <ul class="nav">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero container">
+    <img src="images/illustration-intro.png" alt="Intro" class="hero-img">
+    <h1>All your files in one secure location, accessible anywhere.</h1>
+    <p>Fylo stores all your most important files in one secure location. 
+      Access them wherever you need, share and collaborate with friends, 
+      family, and co-workers.</p>
+    <a href="#" class="btn">Get Started</a>
+  </section>
+  <section class="features container">
+    <div class="feature">
+      <img src="images/icon-access-anywhere.svg" alt="">
+      <h3>Access your files, anywhere</h3>
+      <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+    </div>
+    <div class="feature">
+      <img src="images/icon-security.svg" alt="">
+      <h3>Security you can trust</h3>
+      <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+    </div>
+    <div class="feature">
+      <img src="images/icon-collaboration.svg" alt="">
+      <h3>Real-time collaboration</h3>
+      <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+    </div>
+    <div class="feature">
+      <img src="images/icon-any-file.svg" alt="">
+      <h3>Store any type of file</h3>
+      <p>Whether you're sharing holiday photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+    </div>
+  </section>
+  <section class="productive container">
+    <img src="images/illustration-stay-productive.png" alt="Stay productive">
+    <div class="productive-text">
+      <h2>Stay productive, wherever you are</h2>
+      <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+      <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+      <a href="#">See how Fylo works <img src="images/icon-arrow.svg" alt=""></a>
+    </div>
+  </section>
+  <section class="testimonials container">
+    <div class="card">
+      <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+      <div class="user">
+        <img src="images/profile-1.jpg" alt="">
+        <div>
+          <h4>Satish Patel</h4>
+          <small>Founder & CEO, Huddle</small>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+      <div class="user">
+        <img src="images/profile-2.jpg" alt="">
+        <div>
+          <h4>Bruce McKenzie</h4>
+          <small>Founder & CEO, Huddle</small>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+      <div class="user">
+        <img src="images/profile-3.jpg" alt="">
+        <div>
+          <h4>Iva Boyd</h4>
+          <small>Founder & CEO, Huddle</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><img src="images/logo.svg" alt="Fylo Logo"></div>
+      <div class="footer-col">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+      </div>
+      <div class="footer-col">
+        <p>+1-543-123-4567</p>
+        <p>example@fylo.com</p>
+      </div>
+      <div class="footer-col">
+        <p>About Us</p>
+        <p>Jobs</p>
+        <p>Press</p>
+        <p>Blog</p>
+      </div>
+      <div class="footer-col">
+        <p>Contact Us</p>
+        <p>Terms</p>
+        <p>Privacy</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
